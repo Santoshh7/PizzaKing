@@ -1,0 +1,914 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pizza King - Order Delicious Pizza Online</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+</head>
+<body>
+    <header>
+        <nav>
+            <div class="logo">
+                <h1>Pizza King</h1>
+                <p>A PLACE OF TASTE</p>
+            </div>
+            <div class="nav-links">
+                <a href="#home" class="active">Home</a>
+                <a href="#menu">Menu</a>
+                <a href="#offers">Offers</a>
+                <a href="#about">About Us</a>
+                <a href="#contact">Contact</a>
+            </div>
+            <div class="nav-icons">
+                <a href="#" class="cart-icon"><i class="fas fa-shopping-cart"></i><span class="cart-count">0</span></a>
+                <a href="#" class="user-icon"><i class="fas fa-user"></i></a>
+                <button class="mobile-menu-btn"><i class="fas fa-bars"></i></button>
+            </div>
+        </nav>
+    </header>
+
+    <section class="hero" id="home">
+        <div class="hero-content">
+            <h1>Delicious Pizza Delivered Fast</h1>
+            <p>Order your favorite pizza online and enjoy hot delivery to your doorstep</p>
+            <div class="cta-buttons">
+                <a href="#menu" class="btn primary-btn">Order Now</a>
+                <a href="#menu" class="btn secondary-btn">View Menu</a>
+            </div>
+        </div>
+    </section>
+
+    <section class="quick-categories" id="categories">
+        <h2 class="section-title">What would you like to order?</h2>
+        <div class="category-container">
+            <div class="category-item" data-category="pizza">
+                <div class="category-img-container">
+                    <img src="https://images.unsplash.com/photo-1571407970349-bc81e7e96d47?ixlib=rb-1.2.1&auto=format&fit=crop&w=500&q=60" alt="Pizza">
+                </div>
+                <h3>Pizzas</h3>
+                <p class="category-desc">Our signature hand-tossed pizzas</p>
+                <a href="#menu" class="category-btn" data-tab="super-range">View Menu</a>
+            </div>
+            <div class="category-item" data-category="sides">
+                <div class="category-img-container">
+                    <img src="https://images.unsplash.com/photo-1541592106381-b31e9677c0e5?ixlib=rb-1.2.1&auto=format&fit=crop&w=500&q=60" alt="Sides">
+                </div>
+                <h3>Sides</h3>
+                <p class="category-desc">Perfect companions for your meal</p>
+                <a href="#menu" class="category-btn" data-tab="sides">View Menu</a>
+            </div>
+            <div class="category-item" data-category="drinks">
+                <div class="category-img-container">
+                    <img src="https://images.unsplash.com/photo-1513558161293-cdaf765ed2fd?ixlib=rb-1.2.1&auto=format&fit=crop&w=500&q=60" alt="Drinks">
+                </div>
+                <h3>Beverages</h3>
+                <p class="category-desc">Refreshing drinks and sodas</p>
+                <a href="#menu" class="category-btn" data-tab="beverages">View Menu</a>
+            </div>
+            <div class="category-item" data-category="desserts">
+                <div class="category-img-container">
+                    <img src="https://images.unsplash.com/photo-1551024601-bec78aea704b?ixlib=rb-1.2.1&auto=format&fit=crop&w=500&q=60" alt="Desserts">
+                </div>
+                <h3>Desserts</h3>
+                <p class="category-desc">Sweet treats to complete your meal</p>
+                <a href="#menu" class="category-btn" data-tab="desserts">View Menu</a>
+            </div>
+            <div class="category-item" data-category="combos">
+                <div class="category-img-container">
+                    <img src="https://images.unsplash.com/photo-1565299507177-b0ac66763828?ixlib=rb-1.2.1&auto=format&fit=crop&w=500&q=60" alt="Combo Meals">
+                    <div class="category-badge">Best Value</div>
+                </div>
+                <h3>Combo Meals</h3>
+                <p class="category-desc">Perfect value meals for groups</p>
+                <a href="#menu" class="category-btn" data-tab="combos">View Menu</a>
+            </div>
+            <div class="category-item" data-category="addons">
+                <div class="category-img-container">
+                    <img src="https://images.unsplash.com/photo-1627308595171-d1b5d67129c4?ixlib=rb-1.2.1&auto=format&fit=crop&w=500&q=60" alt="Add-ons">
+                </div>
+                <h3>Add-Ons</h3>
+                <p class="category-desc">Extra toppings and dips</p>
+                <a href="#menu" class="category-btn" data-tab="addons">View Menu</a>
+            </div>
+        </div>
+    </section>
+
+    <section class="featured-offers">
+        <h2>Special Offers</h2>
+        <div class="offers-container">
+            <div class="offer-card">
+                <div class="offer-badge bogo">BOGO</div>
+                <h3>Buy 1 Get 1 Free</h3>
+                <p>On all medium pizzas</p>
+                <small>*Valid on weekdays only</small>
+                <a href="#menu" class="btn primary-btn">Order Now</a>
+            </div>
+            <div class="offer-card">
+                <div class="offer-badge">30% OFF</div>
+                <h3>Family Combo</h3>
+                <p>2 Large pizzas + Sides + 2L Drink</p>
+                <small>*Limited time offer</small>
+                <a href="#menu" class="btn primary-btn">Order Now</a>
+            </div>
+            <div class="offer-card">
+                <div class="offer-badge new">NEW</div>
+                <h3>Stuffed Crust</h3>
+                <p>Try our new cheese-filled crust</p>
+                <small>*Available on all large pizzas</small>
+                <a href="#menu" class="btn primary-btn">Order Now</a>
+            </div>
+        </div>
+    </section>
+
+    <section class="popular-items" id="menu">
+        <h2>Our Menu</h2>
+        <div class="menu-tabs">
+            <button class="menu-tab active" data-category="super-range">Super Range Pizza</button>
+            <button class="menu-tab" data-category="mix-special">Mix Special</button>
+            <button class="menu-tab" data-category="premium-range">Premium Range</button>
+            <button class="menu-tab" data-category="crust-pasta">Crust & Pasta</button>
+            <button class="menu-tab" data-category="burger">Special Burger</button>
+            <button class="menu-tab" data-category="sides">Side Items</button>
+            <button class="menu-tab" data-category="beverages">Beverages</button>
+            <button class="menu-tab" data-category="desserts">Desserts</button>
+            <button class="menu-tab" data-category="addons">Add-Ons</button>
+            <button class="menu-tab" data-category="combos">Combo Meals</button>
+        </div>
+
+        <div class="menu-category active" id="super-range">
+            <div class="items-container">
+                <div class="item-card menu-item">
+                    <div class="item-image">
+                        <img src="https://images.unsplash.com/photo-1571407970349-bc81e7e96d47?ixlib=rb-1.2.1&auto=format&fit=crop&w=500&q=60" alt="Veg Treat">
+                        <div class="item-badge veg">100% Veg</div>
+                    </div>
+                    <div class="item-details">
+                        <h3>Veg Treat</h3>
+                        <p class="item-description">Cheese, Onion, Capsicum, Tomato</p>
+                        <div class="item-meta">
+                            <div class="item-sizes">
+                                <span class="size">Reg: $135</span>
+                                <span class="size">Med: $250</span>
+                            </div>
+                        </div>
+                        <button class="btn add-to-cart-btn">Add to Cart</button>
+                    </div>
+                </div>
+                <div class="item-card menu-item">
+                    <div class="item-image">
+                        <img src="https://images.unsplash.com/photo-1513104890138-7c749659a591?ixlib=rb-1.2.1&auto=format&fit=crop&w=500&q=60" alt="Cheesy Wonder">
+                    </div>
+                    <div class="item-details">
+                        <h3>Cheesy Wonder</h3>
+                        <p class="item-description">Loaded With Extra Cheese</p>
+                        <div class="item-meta">
+                            <div class="item-sizes">
+                                <span class="size">Reg: $135</span>
+                                <span class="size">Med: $250</span>
+                            </div>
+                        </div>
+                        <button class="btn add-to-cart-btn">Add to Cart</button>
+                    </div>
+                </div>
+                <div class="item-card menu-item">
+                    <div class="item-image">
+                        <img src="https://images.unsplash.com/photo-1565299624946-b28f40a0ae38?ixlib=rb-1.2.1&auto=format&fit=crop&w=500&q=60" alt="Golden Choice">
+                    </div>
+                    <div class="item-details">
+                        <h3>Golden Choice</h3>
+                        <p class="item-description">Cheese, Corn, Paneer Masala</p>
+                        <div class="item-meta">
+                            <div class="item-sizes">
+                                <span class="size">Reg: $135</span>
+                                <span class="size">Med: $250</span>
+                            </div>
+                        </div>
+                        <button class="btn add-to-cart-btn">Add to Cart</button>
+                    </div>
+                </div>
+                <div class="item-card menu-item">
+                    <div class="item-image">
+                        <img src="https://images.unsplash.com/photo-1574071318508-1cdbab80d002?ixlib=rb-1.2.1&auto=format&fit=crop&w=500&q=60" alt="Paneer Do Pyaza">
+                    </div>
+                    <div class="item-details">
+                        <h3>Paneer Do Pyaza</h3>
+                        <p class="item-description">In Tandoori Sauce, Cheese, Onion, Paneer</p>
+                        <div class="item-meta">
+                            <div class="item-sizes">
+                                <span class="size">Reg: $135</span>
+                                <span class="size">Med: $250</span>
+                            </div>
+                        </div>
+                        <button class="btn add-to-cart-btn">Add to Cart</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="menu-category" id="mix-special">
+            <div class="items-container">
+                <div class="item-card menu-item">
+                    <div class="item-image">
+                        <img src="https://images.unsplash.com/photo-1513104890138-7c749659a591?ixlib=rb-1.2.1&auto=format&fit=crop&w=500&q=60" alt="Cheese, Onion & Capsicum">
+                    </div>
+                    <div class="item-details">
+                        <h3>Cheese, Onion & Capsicum</h3>
+                        <p class="item-description">Fresh ingredients with our special sauce</p>
+                        <div class="item-meta">
+                            <div class="item-price">$90</div>
+                        </div>
+                        <button class="btn add-to-cart-btn">Add to Cart</button>
+                    </div>
+                </div>
+                <div class="item-card menu-item">
+                    <div class="item-image">
+                        <img src="https://images.unsplash.com/photo-1565299624946-b28f40a0ae38?ixlib=rb-1.2.1&auto=format&fit=crop&w=500&q=60" alt="Cheese, Capsicum & Soya">
+                    </div>
+                    <div class="item-details">
+                        <h3>Cheese, Capsicum & Soya</h3>
+                        <p class="item-description">Healthy and delicious combination</p>
+                        <div class="item-meta">
+                            <div class="item-price">$90</div>
+                        </div>
+                        <button class="btn add-to-cart-btn">Add to Cart</button>
+                    </div>
+                </div>
+                <div class="item-card menu-item">
+                    <div class="item-image">
+                        <img src="https://images.unsplash.com/photo-1574071318508-1cdbab80d002?ixlib=rb-1.2.1&auto=format&fit=crop&w=500&q=60" alt="Cheese, Tomato & Onion">
+                    </div>
+                    <div class="item-details">
+                        <h3>Cheese, Tomato & Onion</h3>
+                        <p class="item-description">Classic flavors with premium cheese</p>
+                        <div class="item-meta">
+                            <div class="item-price">$90</div>
+                        </div>
+                        <button class="btn add-to-cart-btn">Add to Cart</button>
+                    </div>
+                </div>
+                <div class="item-card menu-item">
+                    <div class="item-image">
+                        <img src="https://images.unsplash.com/photo-1593560708920-61dd98c46a4e?ixlib=rb-1.2.1&auto=format&fit=crop&w=500&q=60" alt="Cheese Mushroom & Paneer">
+                    </div>
+                    <div class="item-details">
+                        <h3>Cheese Mushroom & Paneer</h3>
+                        <p class="item-description">Premium combination of mushroom and paneer</p>
+                        <div class="item-meta">
+                            <div class="item-price">$120</div>
+                        </div>
+                        <button class="btn add-to-cart-btn">Add to Cart</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="menu-category" id="premium-range">
+            <div class="items-container">
+                <div class="item-card menu-item">
+                    <div class="item-image">
+                        <img src="https://images.unsplash.com/photo-1593560708920-61dd98c46a4e?ixlib=rb-1.2.1&auto=format&fit=crop&w=500&q=60" alt="Mexican">
+                        <div class="item-badge premium">Premium</div>
+                    </div>
+                    <div class="item-details">
+                        <h3>Mexican</h3>
+                        <p class="item-description">Cheese, Onion, Capsicum, Corn, Jalapeño</p>
+                        <div class="item-meta">
+                            <div class="item-sizes">
+                                <span class="size">Reg: $180</span>
+                                <span class="size">Med: $330</span>
+                            </div>
+                        </div>
+                        <button class="btn add-to-cart-btn">Add to Cart</button>
+                    </div>
+                </div>
+                <div class="item-card menu-item">
+                    <div class="item-image">
+                        <img src="https://images.unsplash.com/photo-1571407970349-bc81e7e96d47?ixlib=rb-1.2.1&auto=format&fit=crop&w=500&q=60" alt="Spicy Delight">
+                        <div class="item-badge spicy">Spicy</div>
+                    </div>
+                    <div class="item-details">
+                        <h3>Spicy Delight</h3>
+                        <p class="item-description">Cheese, Capsicum Paneer, Red Pepper</p>
+                        <div class="item-meta">
+                            <div class="item-sizes">
+                                <span class="size">Reg: $180</span>
+                                <span class="size">Med: $330</span>
+                            </div>
+                        </div>
+                        <button class="btn add-to-cart-btn">Add to Cart</button>
+                    </div>
+                </div>
+                <div class="item-card menu-item">
+                    <div class="item-image">
+                        <img src="https://images.unsplash.com/photo-1574071318508-1cdbab80d002?ixlib=rb-1.2.1&auto=format&fit=crop&w=500&q=60" alt="Veg Delight">
+                    </div>
+                    <div class="item-details">
+                        <h3>Veg Delight</h3>
+                        <p class="item-description">Cheese, Onion, Capsicum, Tomato, Mushroom</p>
+                        <div class="item-meta">
+                            <div class="item-sizes">
+                                <span class="size">Reg: $180</span>
+                                <span class="size">Med: $330</span>
+                            </div>
+                        </div>
+                        <button class="btn add-to-cart-btn">Add to Cart</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="menu-category" id="crust-pasta">
+            <div class="items-container">
+                <div class="item-card menu-item">
+                    <div class="item-image">
+                        <img src="https://images.unsplash.com/photo-1565299624946-b28f40a0ae38?ixlib=rb-1.2.1&auto=format&fit=crop&w=500&q=60" alt="Cheese Burst">
+                    </div>
+                    <div class="item-details">
+                        <h3>Cheese Burst</h3>
+                        <p class="item-description">Crust filled with molten cheese</p>
+                        <div class="item-meta">
+                            <div class="item-sizes">
+                                <span class="size">Reg: $40</span>
+                                <span class="size">Med: $70</span>
+                            </div>
+                        </div>
+                        <button class="btn add-to-cart-btn">Add to Cart</button>
+                    </div>
+                </div>
+                <div class="item-card menu-item">
+                    <div class="item-image">
+                        <img src="https://images.unsplash.com/photo-1473093295043-cdd812d0e601?ixlib=rb-1.2.1&auto=format&fit=crop&w=500&q=60" alt="Special Pasta">
+                        <div class="item-badge new">New</div>
+                    </div>
+                    <div class="item-details">
+                        <h3>Special Pasta</h3>
+                        <p class="item-description">Variety of pasta options</p>
+                        <div class="item-meta">
+                            <div class="item-price">From $100</div>
+                        </div>
+                        <button class="btn add-to-cart-btn">Add to Cart</button>
+                    </div>
+                </div>
+                <div class="item-card menu-item">
+                    <div class="item-image">
+                        <img src="https://images.unsplash.com/photo-1555949258-eb67b1ef0ceb?ixlib=rb-1.2.1&auto=format&fit=crop&w=500&q=60" alt="Spicy Red Pasta">
+                    </div>
+                    <div class="item-details">
+                        <h3>Spicy Red Pasta</h3>
+                        <p class="item-description">Pasta in spicy red sauce</p>
+                        <div class="item-meta">
+                            <div class="item-price">$100</div>
+                        </div>
+                        <button class="btn add-to-cart-btn">Add to Cart</button>
+                    </div>
+                </div>
+                <div class="item-card menu-item">
+                    <div class="item-image">
+                        <img src="https://images.unsplash.com/photo-1608219992759-8d74ed8d76eb?ixlib=rb-1.2.1&auto=format&fit=crop&w=500&q=60" alt="Cheesy White Pasta">
+                    </div>
+                    <div class="item-details">
+                        <h3>Cheesy White Pasta</h3>
+                        <p class="item-description">Pasta in creamy white sauce</p>
+                        <div class="item-meta">
+                            <div class="item-price">$120</div>
+                        </div>
+                        <button class="btn add-to-cart-btn">Add to Cart</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="menu-category" id="burger">
+            <div class="items-container">
+                <div class="item-card menu-item">
+                    <div class="item-image">
+                        <img src="https://images.unsplash.com/photo-1568901346375-23c9450c58cd?ixlib=rb-1.2.1&auto=format&fit=crop&w=500&q=60" alt="King Burger">
+                    </div>
+                    <div class="item-details">
+                        <h3>King Burger</h3>
+                        <p class="item-description">Our signature burger</p>
+                        <div class="item-meta">
+                            <div class="item-price">$45</div>
+                        </div>
+                        <button class="btn add-to-cart-btn">Add to Cart</button>
+                    </div>
+                </div>
+                <div class="item-card menu-item">
+                    <div class="item-image">
+                        <img src="https://images.unsplash.com/photo-1586190848861-99aa4a171e90?ixlib=rb-1.2.1&auto=format&fit=crop&w=500&q=60" alt="Paneer Burger">
+                    </div>
+                    <div class="item-details">
+                        <h3>Paneer Burger</h3>
+                        <p class="item-description">Stuffed with paneer patty</p>
+                        <div class="item-meta">
+                            <div class="item-price">$55</div>
+                        </div>
+                        <button class="btn add-to-cart-btn">Add to Cart</button>
+                    </div>
+                </div>
+                <div class="item-card menu-item">
+                    <div class="item-image">
+                        <img src="https://images.unsplash.com/photo-1565299507177-b0ac66763828?ixlib=rb-1.2.1&auto=format&fit=crop&w=500&q=60" alt="King Special Burger">
+                        <div class="item-badge bestseller">Special</div>
+                    </div>
+                    <div class="item-details">
+                        <h3>King Special Burger</h3>
+                        <p class="item-description">Loaded with toppings and special sauce</p>
+                        <div class="item-meta">
+                            <div class="item-price">$65</div>
+                        </div>
+                        <button class="btn add-to-cart-btn">Add to Cart</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="menu-category" id="sides">
+            <div class="items-container">
+                <div class="item-card menu-item">
+                    <div class="item-image">
+                        <img src="https://cdn.pixabay.com/photo/2020/05/11/15/06/food-5158702_1280.jpg" alt="Garlic Bread With Cheese">
+                    </div>
+                    <div class="item-details">
+                        <h3>Garlic Bread With Cheese</h3>
+                        <p class="item-description">Freshly baked</p>
+                        <div class="item-meta">
+                            <div class="item-price">$90</div>
+                        </div>
+                        <button class="btn add-to-cart-btn">Add to Cart</button>
+                    </div>
+                </div>
+                <div class="item-card menu-item">
+                    <div class="item-image">
+                        <img src="https://images.unsplash.com/photo-1600628421055-4d30de868b8f?ixlib=rb-1.2.1&auto=format&fit=crop&w=500&q=60" alt="Stuffed Garlic Bread">
+                    </div>
+                    <div class="item-details">
+                        <h3>Stuffed Garlic Bread</h3>
+                        <p class="item-description">Stuffed with cheese and herbs</p>
+                        <div class="item-meta">
+                            <div class="item-price">$100</div>
+                        </div>
+                        <button class="btn add-to-cart-btn">Add to Cart</button>
+                    </div>
+                </div>
+                <div class="item-card menu-item">
+                    <div class="item-image">
+                        <img src="https://images.unsplash.com/photo-1585238342024-78d387f4a707?ixlib=rb-1.2.1&auto=format&fit=crop&w=500&q=60" alt="Zingy Parcel">
+                    </div>
+                    <div class="item-details">
+                        <h3>Zingy Parcel (4pcs)</h3>
+                        <p class="item-description">Spicy snack parcels</p>
+                        <div class="item-meta">
+                            <div class="item-price">$120</div>
+                        </div>
+                        <button class="btn add-to-cart-btn">Add to Cart</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="menu-category" id="beverages">
+            <h3 class="category-title">Refreshing Beverages</h3>
+            <div class="items-container">
+                <div class="item-card menu-item">
+                    <div class="item-image">
+                        <img src="https://images.unsplash.com/photo-1622483767028-3f66f32aef97?ixlib=rb-1.2.1&auto=format&fit=crop&w=500&q=60" alt="Soft Drinks">
+                    </div>
+                    <div class="item-details">
+                        <h3>Soft Drinks</h3>
+                        <p class="item-description">Coke, Sprite, Fanta, Pepsi</p>
+                        <div class="item-meta">
+                            <div class="item-sizes">
+                                <span class="size">Regular: $2.00</span>
+                                <span class="size">Large: $3.50</span>
+                            </div>
+                        </div>
+                        <button class="btn add-to-cart-btn">Add to Cart</button>
+                    </div>
+                </div>
+                <div class="item-card menu-item">
+                    <div class="item-image">
+                        <img src="https://images.unsplash.com/photo-1595981267035-7b04ca84a82d?ixlib=rb-1.2.1&auto=format&fit=crop&w=500&q=60" alt="Fresh Lemonade">
+                        <div class="item-badge new">New</div>
+                    </div>
+                    <div class="item-details">
+                        <h3>Fresh Lemonade</h3>
+                        <p class="item-description">Home-made with real lemons</p>
+                        <div class="item-meta">
+                            <div class="item-price">$4.50</div>
+                        </div>
+                        <button class="btn add-to-cart-btn">Add to Cart</button>
+                    </div>
+                </div>
+                <div class="item-card menu-item">
+                    <div class="item-image">
+                        <img src="https://i.ibb.co/WKxFcYh/iced-tea.jpg" alt="Iced Tea">
+                    </div>
+                    <div class="item-details">
+                        <h3>Iced Tea</h3>
+                        <p class="item-description">Sweet or unsweetened</p>
+                        <div class="item-meta">
+                            <div class="item-price">$3.50</div>
+                        </div>
+                        <button class="btn add-to-cart-btn">Add to Cart</button>
+                    </div>
+                </div>
+                <div class="item-card menu-item">
+                    <div class="item-image">
+                        <img src="https://images.unsplash.com/photo-1614707267537-b85aaf00c4b7?ixlib=rb-1.2.1&auto=format&fit=crop&w=500&q=60" alt="Mineral Water">
+                    </div>
+                    <div class="item-details">
+                        <h3>Mineral Water</h3>
+                        <p class="item-description">Still or sparkling</p>
+                        <div class="item-meta">
+                            <div class="item-price">$2.00</div>
+                        </div>
+                        <button class="btn add-to-cart-btn">Add to Cart</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="menu-category" id="desserts">
+            <h3 class="category-title">Sweet Treats</h3>
+            <div class="items-container">
+                <div class="item-card menu-item">
+                    <div class="item-image">
+                        <img src="https://images.unsplash.com/photo-1587314168485-3236d6710814?ixlib=rb-1.2.1&auto=format&fit=crop&w=500&q=60" alt="Chocolate Brownie">
+                        <div class="item-badge bestseller">Popular</div>
+                    </div>
+                    <div class="item-details">
+                        <h3>Chocolate Brownie</h3>
+                        <p class="item-description">Warm brownie with vanilla ice cream</p>
+                        <div class="item-meta">
+                            <div class="item-price">$5.99</div>
+                        </div>
+                        <button class="btn add-to-cart-btn">Add to Cart</button>
+                    </div>
+                </div>
+                <div class="item-card menu-item">
+                    <div class="item-image">
+                        <img src="https://images.unsplash.com/photo-1530648672449-81f6c723e2f1?ixlib=rb-1.2.1&auto=format&fit=crop&w=500&q=60" alt="Cheesecake">
+                    </div>
+                    <div class="item-details">
+                        <h3>New York Cheesecake</h3>
+                        <p class="item-description">Classic creamy cheesecake</p>
+                        <div class="item-meta">
+                            <div class="item-price">$6.99</div>
+                        </div>
+                        <button class="btn add-to-cart-btn">Add to Cart</button>
+                    </div>
+                </div>
+                <div class="item-card menu-item">
+                    <div class="item-image">
+                        <img src="https://images.unsplash.com/photo-1551024601-bec78aea704b?ixlib=rb-1.2.1&auto=format&fit=crop&w=500&q=60" alt="Ice Cream">
+                    </div>
+                    <div class="item-details">
+                        <h3>Ice Cream Sundae</h3>
+                        <p class="item-description">Choose from various flavors</p>
+                        <div class="item-meta">
+                            <div class="item-price">$4.99</div>
+                        </div>
+                        <button class="btn add-to-cart-btn">Add to Cart</button>
+                    </div>
+                </div>
+                <div class="item-card menu-item">
+                    <div class="item-image">
+                        <img src="https://images.unsplash.com/photo-1499636136210-6f4ee915583e?ixlib=rb-1.2.1&auto=format&fit=crop&w=500&q=60" alt="Cookie">
+                        <div class="item-badge new">New</div>
+                    </div>
+                    <div class="item-details">
+                        <h3>Chocolate Chip Cookie</h3>
+                        <p class="item-description">Freshly baked, warm and gooey</p>
+                        <div class="item-meta">
+                            <div class="item-price">$3.99</div>
+                        </div>
+                        <button class="btn add-to-cart-btn">Add to Cart</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="menu-category" id="addons">
+            <h3 class="category-title">Pizza Add-Ons & Extras</h3>
+            <div class="items-container">
+                <div class="item-card menu-item">
+                    <div class="item-image">
+                        <img src="https://images.unsplash.com/photo-1627308595171-d1b5d67129c4?ixlib=rb-1.2.1&auto=format&fit=crop&w=500&q=60" alt="Extra Cheese">
+                    </div>
+                    <div class="item-details">
+                        <h3>Extra Cheese</h3>
+                        <p class="item-description">More melty goodness</p>
+                        <div class="item-meta">
+                            <div class="item-price">$1.99</div>
+                        </div>
+                        <button class="btn add-to-cart-btn">Add to Cart</button>
+                    </div>
+                </div>
+                <div class="item-card menu-item">
+                    <div class="item-image">
+                        <img src="https://images.unsplash.com/photo-1528498033373-3c6c08e93d79?ixlib=rb-1.2.1&auto=format&fit=crop&w=500&q=60" alt="Dipping Sauce">
+                    </div>
+                    <div class="item-details">
+                        <h3>Dipping Sauces</h3>
+                        <p class="item-description">Garlic, BBQ, Ranch, Marinara</p>
+                        <div class="item-meta">
+                            <div class="item-price">$0.99</div>
+                        </div>
+                        <button class="btn add-to-cart-btn">Add to Cart</button>
+                    </div>
+                </div>
+                <div class="item-card menu-item">
+                    <div class="item-image">
+                        <img src="https://i.ibb.co/RDf3xB4/jalapenos-jar.jpg" alt="Jalapenos">
+                    </div>
+                    <div class="item-details">
+                        <h3>Jalapeños</h3>
+                        <p class="item-description">Add extra spice to any pizza</p>
+                        <div class="item-meta">
+                            <div class="item-price">$1.50</div>
+                        </div>
+                        <button class="btn add-to-cart-btn">Add to Cart</button>
+                    </div>
+                </div>
+                <div class="item-card menu-item">
+                    <div class="item-image">
+                        <img src="https://images.unsplash.com/photo-1594057687713-5fd14eed1c17?ixlib=rb-1.2.1&auto=format&fit=crop&w=500&q=60" alt="Extra Toppings">
+                    </div>
+                    <div class="item-details">
+                        <h3>Premium Toppings</h3>
+                        <p class="item-description">Mushrooms, peppers, olives, etc.</p>
+                        <div class="item-meta">
+                            <div class="item-price">$1.99</div>
+                        </div>
+                        <button class="btn add-to-cart-btn">Add to Cart</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="menu-category" id="combos">
+            <h3 class="category-title">Value Combo Meals</h3>
+            <div class="items-container">
+                <div class="item-card menu-item">
+                    <div class="item-image">
+                        <img src="https://images.unsplash.com/photo-1513104890138-7c749659a591?ixlib=rb-1.2.1&auto=format&fit=crop&w=500&q=60" alt="Family Deal">
+                        <div class="item-badge bestseller">Best Value</div>
+                    </div>
+                    <div class="item-details">
+                        <h3>Family Deal</h3>
+                        <p class="item-description">2 Medium Pizzas + 1 Side + 2L Drink</p>
+                        <div class="item-meta">
+                            <div class="item-price">$29.99</div>
+                        </div>
+                        <button class="btn add-to-cart-btn">Add to Cart</button>
+                    </div>
+                </div>
+                <div class="item-card menu-item">
+                    <div class="item-image">
+                        <img src="https://images.unsplash.com/photo-1528137871618-79d2761e3fd5?ixlib=rb-1.2.1&auto=format&fit=crop&w=500&q=60" alt="Date Night Special">
+                    </div>
+                    <div class="item-details">
+                        <h3>Date Night Special</h3>
+                        <p class="item-description">1 Medium Pizza + 2 Sides + 2 Drinks</p>
+                        <div class="item-meta">
+                            <div class="item-price">$24.99</div>
+                        </div>
+                        <button class="btn add-to-cart-btn">Add to Cart</button>
+                    </div>
+                </div>
+                <div class="item-card menu-item">
+                    <div class="item-image">
+                        <img src="https://cdn.pixabay.com/photo/2017/12/09/08/18/pizza-3007395_1280.jpg" alt="Party Pack">
+                        <div class="item-badge new">New</div>
+                    </div>
+                    <div class="item-details">
+                        <h3>Party Pack</h3>
+                        <p class="item-description">3 Large Pizzas + 2 Sides + 3L Drink</p>
+                        <div class="item-meta">
+                            <div class="item-price">$49.99</div>
+                        </div>
+                        <button class="btn add-to-cart-btn">Add to Cart</button>
+                    </div>
+                </div>
+                <div class="item-card menu-item">
+                    <div class="item-image">
+                        <img src="https://images.unsplash.com/photo-1565299624946-b28f40a0ae38?ixlib=rb-1.2.1&auto=format&fit=crop&w=500&q=60" alt="Solo Meal">
+                    </div>
+                    <div class="item-details">
+                        <h3>Solo Meal</h3>
+                        <p class="item-description">1 Small Pizza + 1 Side + Drink</p>
+                        <div class="item-meta">
+                            <div class="item-price">$14.99</div>
+                        </div>
+                        <button class="btn add-to-cart-btn">Add to Cart</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="featured-offers" id="offers">
+        <h2>Exclusive Offers</h2>
+        <div class="offers-container">
+            <div class="offer-card">
+                <div class="offer-badge bogo">BUY 1 GET 1 FREE</div>
+                <div class="offer-image">
+                    <img src="https://images.unsplash.com/photo-1513104890138-7c749659a591?ixlib=rb-1.2.1&auto=format&fit=crop&w=500&q=60" alt="Buy 1 Get 1 Free">
+                </div>
+                <h3>Special Offer 1</h3>
+                <p>Buy Special Range Medium Pizza, Get Free 1 Small Onion Pizza</p>
+                <small>*Terms & Conditions Apply. Not Valid on Festival Day</small>
+                <a href="#menu" class="btn primary-btn">Order Now</a>
+            </div>
+            <div class="offer-card">
+                <div class="offer-badge free">FREE BURGER</div>
+                <div class="offer-image">
+                    <img src="https://images.unsplash.com/photo-1568901346375-23c9450c58cd?ixlib=rb-1.2.1&auto=format&fit=crop&w=500&q=60" alt="Free Burger">
+                </div>
+                <h3>Special Offer 2</h3>
+                <p>Buy Any Medium Pizza, Get Free 1 King Burger</p>
+                <small>*Terms & Conditions Apply. Not Valid on Festival Day</small>
+                <a href="#menu" class="btn primary-btn">Order Now</a>
+            </div>
+            <div class="offer-card">
+                <div class="offer-badge free">FREE DELIVERY</div>
+                <div class="offer-image">
+                    <img src="https://images.unsplash.com/photo-1571407970349-bc81e7e96d47?ixlib=rb-1.2.1&auto=format&fit=crop&w=500&q=60" alt="Free Delivery">
+                </div>
+                <h3>Free Home Delivery</h3>
+                <p>Order online and get free delivery right to your doorstep</p>
+                <small>*Min order value may apply</small>
+                <a href="#menu" class="btn primary-btn">Order Now</a>
+            </div>
+        </div>
+    </section>
+
+    <section class="app-download">
+        <div class="app-content">
+            <div class="app-text">
+                <h2>Download Our App</h2>
+                <p>Get exclusive app-only offers and track your delivery in real-time</p>
+                <div class="app-buttons">
+                    <a href="#" class="app-btn">
+                        <i class="fab fa-apple"></i>
+                        <span>App Store</span>
+                    </a>
+                    <a href="#" class="app-btn">
+                        <i class="fab fa-google-play"></i>
+                        <span>Google Play</span>
+                    </a>
+                </div>
+            </div>
+            <div class="app-image">
+                <img src="https://images.unsplash.com/photo-1511389026070-a14ae610a1be?ixlib=rb-1.2.1&auto=format&fit=crop&w=500&q=60" alt="Mobile App">
+            </div>
+        </div>
+    </section>
+
+    <section class="testimonials" id="about">
+        <h2>What Our Customers Say</h2>
+        <div class="testimonial-container">
+            <div class="testimonial-card">
+                <div class="customer-info">
+                    <div class="customer-avatar">
+                        <img src="https://randomuser.me/api/portraits/men/32.jpg" alt="Customer">
+                    </div>
+                    <div class="customer-name">John D.</div>
+                </div>
+                <div class="testimonial-rating">
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                </div>
+                <p class="testimonial-text">"The delivery was super fast and the pizza was still hot when it arrived. Their Pepperoni Supreme is absolutely delicious!"</p>
+            </div>
+            <div class="testimonial-card">
+                <div class="customer-info">
+                    <div class="customer-avatar">
+                        <img src="https://randomuser.me/api/portraits/women/44.jpg" alt="Customer">
+                    </div>
+                    <div class="customer-name">Sarah M.</div>
+                </div>
+                <div class="testimonial-rating">
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star-half-alt"></i>
+                </div>
+                <p class="testimonial-text">"The BOGO offer is amazing value! We order every week now. The app makes it so easy to customize our pizzas just the way we like them."</p>
+            </div>
+            <div class="testimonial-card">
+                <div class="customer-info">
+                    <div class="customer-avatar">
+                        <img src="https://randomuser.me/api/portraits/men/67.jpg" alt="Customer">
+                    </div>
+                    <div class="customer-name">Mike T.</div>
+                </div>
+                <div class="testimonial-rating">
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                </div>
+                <p class="testimonial-text">"Best pizza in town, hands down! The stuffed crust is a game changer. Also, their customer service is exceptional."</p>
+            </div>
+        </div>
+    </section>
+
+    <section class="delivery-info">
+        <div class="delivery-info-item">
+            <i class="fas fa-motorcycle"></i>
+            <div>
+                <span>FREE HOME DELIVERY</span><br>
+                <span class="phone">+91XXXXXXXXXX, +91XXXXXXXXXX</span>
+            </div>
+        </div>
+        <div class="delivery-info-item">
+            <i class="fas fa-clock"></i>
+            <div>
+                <span>OPENING HOURS</span><br>
+                <span>10:00 AM to 10:30 PM</span>
+            </div>
+        </div>
+    </section>
+
+    <footer id="contact">
+        <div class="footer-content">
+            <div class="footer-column">
+                <h3>Pizza King</h3>
+                <p>Bringing the finest pizzas to your doorstep since 2005. Quality ingredients, authentic recipes, and royal treatment for every customer.</p>
+                <div class="social-icons">
+                    <a href="#"><i class="fab fa-facebook-f"></i></a>
+                    <a href="#"><i class="fab fa-instagram"></i></a>
+                    <a href="#"><i class="fab fa-twitter"></i></a>
+                    <a href="#"><i class="fab fa-youtube"></i></a>
+                </div>
+            </div>
+            <div class="footer-column">
+                <h3>Quick Links</h3>
+                <ul>
+                    <li><a href="#home">Home</a></li>
+                    <li><a href="#menu">Menu</a></li>
+                    <li><a href="#offers">Offers & Promos</a></li>
+                    <li><a href="#about">About Us</a></li>
+                    <li><a href="#contact">Contact</a></li>
+                </ul>
+            </div>
+            <div class="footer-column">
+                <h3>Contact Us</h3>
+                <ul class="contact-info">
+                    <li><i class="fas fa-map-marker-alt"></i> ERANGLE-Pochinki, Near Church, shamshaan ghat ke saamne, EG-015423</li>
+                    <li><i class="fas fa-phone"></i> +91XXXXXXXXXX, +91XXXXXXXXXX </li>
+                    <li><i class="fas fa-envelope"></i> contact@pizzaking.com</li>
+                </ul>
+            </div>
+            <div class="footer-column">
+                <h3>Opening Hours</h3>
+                <ul class="hours-list">
+                    <li>Monday - Thursday: 11AM - 10PM</li>
+                    <li>Friday - Saturday: 11AM - 12AM</li>
+                    <li>Sunday: 12PM - 9PM</li>
+                </ul>
+                <a href="#menu" class="btn primary-btn">Order Now</a>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <p>&copy; 2023 Pizza King. All Rights Reserved.</p>
+            <div class="footer-links">
+                <a href="#">Privacy Policy</a>
+                <a href="#">Terms of Service</a>
+                <a href="#">Accessibility</a>
+            </div>
+        </div>
+    </footer>
+
+    <div class="cart-sidebar">
+        <div class="cart-header">
+            <h2>Your Cart</h2>
+            <button class="close-cart"><i class="fas fa-times"></i></button>
+        </div>
+        <div class="cart-items">
+            <!-- Cart items will be dynamically added here -->
+            <div class="empty-cart-message">Your cart is empty</div>
+        </div>
+        <div class="cart-footer">
+            <div class="cart-total">
+                <span>Total:</span>
+                <span class="total-price">$0.00</span>
+            </div>
+            <button class="btn primary-btn checkout-btn">Checkout</button>
+            <button class="btn secondary-btn continue-shopping">Continue Shopping</button>
+        </div>
+    </div>
+    <div class="overlay"></div>
+
+    <script src="script.js"></script>
+</body>
+</html> 
